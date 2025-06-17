@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Student response</title>
-  </head>
-  <body>
-    <h1>Lecture Evalaution Form</h1>
 
-    <form id="evaluationForm">
-      <label for="lectureName"> Lecture Name:</label>
-      <input type="text" id="lectureName" name="lectureName" required /><br />
-      <br />
+<head>
+  <title>Student response</title>
+</head>
 
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" required /> <br />
-      <br />
+<body>
+  <h1>Lecture Evalaution Form</h1>
 
-      <label> How well was the subject explained? </label><br />
-      <input
-        type="radio"
-        name="explanation"
-        value="excellent"
-        required
-      />Excellent<br />
-      <input type="radio" name="explanation" value="good" />Good<br />
-      <input type="radio" name="explanation" value="poor" />Poor<br />
-    </form>
-  </body>
+  <form id="evaluationForm">
+    <label for="lectureName"> Lecture Name:</label>
+    <input type="text" id="lectureName" name="lectureName" required /><br />
+    <br />
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required /> <br />
+    <br />
+
+    <label> How well was the subject explained? </label><br />
+    <input type="radio" name="explanation" value="excellent" required />Excellent<br />
+    <input type="radio" name="explanation" value="good" />Good<br />
+    <input type="radio" name="explanation" value="poor" />Poor<br />
+
+    <label> How do you rate the teacher's subject knowledge?</label><br>
+    <input type="radio" name="subjectKnowledge" value="excellent" required>Excellent<br>
+    <input type="radio" name="subjectKnowledge" value="good">Good<br>
+    <input type="radio" name="subjectKnowledge" value="poor">Poor<br>
+
+    <button type="Submit">Submit</button>
+  </form>
+</body>
+
 </html>
